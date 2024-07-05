@@ -9,7 +9,9 @@ const Home = () => {
         fetchRestaurants().then(data => setRestaurants(data));
     }, []);
 
-    return <RestaurantList restaurants={restaurants} />;
+    return (
+        <RestaurantList restaurants={restaurants} />
+    );
 };
 
 export default Home;
