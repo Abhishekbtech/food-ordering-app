@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Menu from '../components/Menu';
 import { fetchMenuItems } from '../utils/api';
 
@@ -7,7 +7,7 @@ const RestaurantDetails = () => {
     const { id } = useParams();
     const [menuItems, setMenuItems] = useState([]);
     const [selectedItems, setSelectedItems] = useState([]);
-    const history = useHistory();
+    const navigator = useNavigate();
 
     useEffect(() => {
         fetchMenuItems(id).then(data => setMenuItems(data));
@@ -18,7 +18,7 @@ const RestaurantDetails = () => {
     };
 
     const handlePlaceOrder = () => {
-        history.push('/order-summary', { selectedItems });
+        navigator('/order-summary', {state : {key : selectedItems}})
     };
 
     return (
