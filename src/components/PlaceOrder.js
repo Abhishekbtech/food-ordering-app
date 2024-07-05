@@ -4,7 +4,6 @@ const PlaceOrder = ({ onTrackOrder }) => {
     const [orderId, setOrderId] = useState(null);
 
     const handlePlaceOrder = () => {
-        // Simulate API call to place order
         const newOrderId = Math.floor(Math.random() * 10000);
         setOrderId(newOrderId);
         onTrackOrder(newOrderId);
