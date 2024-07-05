@@ -7,7 +7,9 @@ const TrackOrder = () => {
     const { orderId } = location.state || {};
 
     return (
-        <OrderTracking orderId={orderId} />
+        <div className="bg-white min-h-screen p-4">
+            <OrderTracking orderId={orderId} />
+        </div>
     );
 };
 
