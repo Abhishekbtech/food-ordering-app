@@ -11,9 +11,14 @@ const PlaceOrder = ({ onTrackOrder }) => {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Place Order</h1>
-            <button onClick={handlePlaceOrder} className="bg-blue-500 text-white p-2">Confirm Order</button>
-            {orderId && <p>Order ID: {orderId}</p>}
+            <h1 className="text-3xl font-bold mb-4">Place Order</h1>
+            <button
+                onClick={handlePlaceOrder}
+                className="w-full bg-blue-600 text-white p-4 mt-4 rounded-md hover:bg-blue-700"
+            >
+                Confirm Order
+            </button>
+            {orderId && <p className="mt-4 text-green-600">Order ID: {orderId}</p>}
         </div>
     );
 };
