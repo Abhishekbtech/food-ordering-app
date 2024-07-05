@@ -16,9 +16,9 @@ const OrderTracking = ({ orderId }) => {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Order Tracking</h1>
-            <p>Order ID: {orderId}</p>
-            <p>Status: {status}</p>
+            <h1 className="text-3xl font-bold mb-4">Order Tracking</h1>
+            <p className="text-lg">Order ID: {orderId}</p>
+            <p className="text-lg mt-2">Status: <span className="font-semibold">{status}</span></p>
         </div>
     );
 };
