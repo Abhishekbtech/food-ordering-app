@@ -1,8 +1,6 @@
 import React from 'react';
 
 const ItemSelection = ({ selectedItems, onPlaceOrder }) => {
-    console.log("item", selectedItems)
-    console.log('jj', onPlaceOrder)
     return (
         <div className="p-4">
             <h1 className="text-2xl font-bold mb-4">Selected Items</h1>
