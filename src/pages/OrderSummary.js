@@ -11,7 +11,9 @@ const OrderSummary = () => {
         navigate("/track-order", { state: { orderId } })
     };
 
-    return <ItemSelection selectedItems={selectedItems} onPlaceOrder={() => handleTrackOrder(1234)} />;
+    return (
+        <ItemSelection selectedItems={selectedItems} onPlaceOrder={() => handleTrackOrder(1234)} />
+    );
 };
 
 export default OrderSummary;
