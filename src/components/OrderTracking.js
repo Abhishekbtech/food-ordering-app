@@ -4,7 +4,6 @@ const OrderTracking = ({ orderId }) => {
     const [status, setStatus] = useState('Preparing');
 
     useEffect(() => {
-        // Simulate API call to track order status
         const timer = setInterval(() => {
             setStatus(prevStatus => {
                 if (prevStatus === 'Preparing') return 'On the way';
@@ -12,7 +11,7 @@ const OrderTracking = ({ orderId }) => {
                 clearInterval(timer);
                 return prevStatus;
             });
-        }, 3000);
+        }, 5000);
     }, []);
 
     return (
