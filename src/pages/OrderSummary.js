@@ -1,14 +1,14 @@
 import React from 'react';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import ItemSelection from '../components/ItemSelection';
 
 const OrderSummary = () => {
     const location = useLocation();
-    const history = useHistory();
-    const { selectedItems } = location.state || [];
+    const navigator = useNavigate();
+    const selectedItems  = location.state.key || [];
 
     const handleTrackOrder = orderId => {
-        history.push('/track-order', { orderId });
+        navigator('/track-order', {state : {key : orderId}})
     };
 
     return (
