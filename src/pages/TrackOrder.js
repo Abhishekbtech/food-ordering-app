@@ -6,7 +6,9 @@ const TrackOrder = () => {
     const location = useLocation();
     const { orderId } = location.state || {};
 
-    return <OrderTracking orderId={orderId} />;
+    return (
+        <OrderTracking orderId={orderId} />
+    );
 };
 
 export default TrackOrder;
