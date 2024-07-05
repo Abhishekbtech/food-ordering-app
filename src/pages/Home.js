@@ -10,7 +10,9 @@ const Home = () => {
     }, []);
 
     return (
-        <RestaurantList restaurants={restaurants} />
+        <div className="bg-white min-h-screen p-4">
+            <RestaurantList restaurants={restaurants} />
+        </div>
     );
 };
 
