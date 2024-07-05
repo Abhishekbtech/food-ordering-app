@@ -44,4 +44,34 @@ This project is a mobile-optimized food ordering application built with React an
 
 ## Deploy on Vercel
 
-Deployment link of my project 'https://apple-music-clone-abhishek-chuahans-projects.vercel.app/'
+Deployment link of my project 'https://food-ordering-app-abhishek-chuahans-projects.vercel.app/'
+
+
+## Components
+### RestaurantList
+Displays a list of available restaurants.
+
+### Menu
+Shows the menu items of a selected restaurant.
+
+### ItemSelection
+Allows users to select items from the menu.
+
+### PlaceOrder
+Enables users to place an order.
+
+### OrderTracking
+Provides a screen to track the status of the order.
+
+## Pages
+### Home
+Lists all available restaurants.
+
+### RestaurantDetails
+Displays the menu items for a selected restaurant and allows item selection.
+
+### OrderSummary
+Shows the selected items and enables order placement.
+
+### TrackOrder
+Tracks the status of an order.
