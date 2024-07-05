@@ -5,6 +5,7 @@ export const fetchRestaurants = async () => {
     ];
 };
 
+
 export const fetchMenuItems = async (restaurantId) => {
     return [
         { id: 1, name: 'Margherita Pizza', price: 12 },
